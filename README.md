@@ -1,6 +1,10 @@
 # ColorPickerInput
 Simple color picker Vue.js component. Based on Bootstrap input type color.
 
+## Demo
+
+https://codesandbox.io/s/color-picker-input-forked-lb1zi
+
 ## Just import component and use v-model, example:
 
 ``` html
