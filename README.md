@@ -35,7 +35,7 @@ data() {
 | label-name                    | String     | Color               | Label Name under the input                       |
 | placeholder                   | String     | #000000             | Input placeholder                                |
 | label-class                   | String     | mb-2                | Label class                                      |
-| style-picker-position         | String     | left: 5px;          | Picker absolute position in input                |
+| style-picker-position         | Object     | {left: '5px'}       | Picker absolute position in input                |
 | style-padding-picker          | String     | padding-left: 35px; | Input padding in input to split text from picker |
 | input-class                   | String     | form-control        | Input class                                      |
 
