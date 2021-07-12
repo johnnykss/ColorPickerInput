@@ -11,7 +11,7 @@
              class="color-picker__color"
              v-model="localColor"
              :style="[
-                 {background: (localColor.length > 0 && localColor.length === 7) ? localColor : '#000000'},
+                 backgroundStyle,
                  stylePickerPosition
                  ]"
       >
@@ -40,8 +40,10 @@ export default {
       default: 'mb-2'
     },
     stylePickerPosition: {
-      type: String,
-      default: 'left: 5px;'
+      type: Object,
+      default() {
+        return {left: '5px'}
+        },
     },
     stylePaddingPicker: {
       type: String,
@@ -61,6 +63,9 @@ export default {
         this.$emit('change', val)
         this.$emit('input', val)
       }
+    },
+    backgroundStyle() {
+      return {background: (this.localColor.length > 0 && this.localColor.length === 7) ? this.localColor : '#000000'};
     }
   }
 }
