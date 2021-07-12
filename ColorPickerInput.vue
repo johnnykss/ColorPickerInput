@@ -1,9 +1,9 @@
 <template>
-  <div :class="mainClass">
+  <div>
     <label :class="labelClass" v-text="labelName"></label>
     <div class="color-picker">
       <input v-model="localColor" type="text"
-             placeholder="#000000"
+             :placeholder="placeholder"
              :class="inputClass"
              :style="stylePaddingPicker"
       >
@@ -27,6 +27,10 @@ export default {
       type: String,
       default: '#000000'
     },
+    placeholder: {
+      type: String,
+      default: '#000000'
+    },
     labelName: {
       type: String,
       default: 'Color'
@@ -42,10 +46,6 @@ export default {
     stylePaddingPicker: {
       type: String,
       default: 'padding-left: 35px;'
-    },
-    mainClass: {
-      type: String,
-      default: 'form-group'
     },
     inputClass: {
       type: String,
