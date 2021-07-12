@@ -1,7 +1,7 @@
 # ColorPickerInput
 Simple color picker Vue.js component. Based on Bootstrap input type color.
 
-Just import component and use v-model, example:
+#### Just import component and use v-model, example:
 
 
 <template>
@@ -27,11 +27,11 @@ data() {
   }
 }
 
--------
+
+#### Props to customize, you can rewrite it by use this properties:
+
 // prop="default" //
-
-Props to customize, you can rewrite it by use this properties:
-
+  
 label-name="Color" // String;
 
 label-class="mb-2" // By default got bootstrap class "mb-2" - String;
