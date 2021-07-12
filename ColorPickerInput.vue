@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label :class="labelClass" v-text="labelName"></label>
+    <label :class="labelClass" v-text="labelName" v-if="labelName"></label>
     <div class="color-picker">
       <input v-model="localColor" type="text"
              :placeholder="placeholder"
