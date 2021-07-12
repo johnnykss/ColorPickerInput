@@ -7,7 +7,7 @@ Simple color picker Vue.js component. Based on Bootstrap input type color.
 <template>
   <div>
     <div class="col-md-3">
-       <ColorPickerInput v-model="color" lebel-name="Test Color"/>
+       <ColorPickerInput class="form-group" v-model="color" lebel-name="Test Color"/>
     </div>
  </div>
 </template>
@@ -33,6 +33,7 @@ data() {
 | Prop                          | Type       | Default             | Description                                      |
 |-------------------------------|------------|---------------------|--------------------------------------------------|
 | label-name                    | String     | Color               | Label Name under the input                       |
+| placeholder                   | String     | #000000             | Input placeholder                                |
 | label-class                   | String     | mb-2                | Label class                                      |
 | style-picker-position         | String     | left: 5px;          | Picker absolute position in input                |
 | style-padding-picker          | String     | padding-left: 35px; | Input padding in input to split text from picker |
