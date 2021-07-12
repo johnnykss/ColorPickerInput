@@ -30,16 +30,11 @@ data() {
 
 ## Props to customize, you can rewrite it by use this properties:
 
-// prop="default" //
-  
-- label-name="Color" // String;
+| Prop                          | Type       | Default             | Description                                      |
+|-------------------------------|------------|---------------------|--------------------------------------------------|
+| label-name                    | String     | Color               | Label Name under the input                       |
+| label-class                   | String     | mb-2                | Label class                                      |
+| style-picker-position         | String     | left: 5px;          | Picker absolute position in input                |
+| style-padding-picker          | String     | padding-left: 35px; | Input padding in input to split text from picker |
+| input-class                   | String     | form-control        | Input class                                      |
 
-- label-class="mb-2" // By default got bootstrap class "mb-2" - String;
-
-- style-picker-position="left: 5px" // If you want color picker to be on the right of the input just change it to "right: 5px";
-
-- style-padding-picker="padding-left: 35px;" // If you want color picker to be on the right change it to "padding-right: 35px";
-
-- main-class="form-group" // Main div class
-
-- input-class="form-control" // Input class
